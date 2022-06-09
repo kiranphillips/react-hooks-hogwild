@@ -1,19 +1,20 @@
 import React from "react";
 import Nav from "./Nav";
+import { hogs } from "../porkers_data";
+import Hogs from "./Hogs";
+import Display from "./Display";
 
-import hogs from "../porkers_data";
 
 function App() {
-	const porkers= hogs.map(hog => {
-		
-	}
-		) 
-
+console.log({...hogs[0]})
 	return (
 		<div className="App">
 			<Nav />
+			<Hogs/>
+			<Display {...hogs[0]}/>
 		</div>
 	);
-}
+	}
 
 export default App;
+
